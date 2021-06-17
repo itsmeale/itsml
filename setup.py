@@ -6,9 +6,9 @@ from setuptools import find_packages, setup  # Always prefer setuptools over dis
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name="orbiaml",
+    name="itsml",
     version="0.0.1",
-    description="Tools for doing machine learning in Orbia",
+    description="Tools for doing machine learning with some of my custom transformers.",
     author="Alexandre Farias <0800alefarias@gmail.com>",
     license="MIT",
     classifiers=[

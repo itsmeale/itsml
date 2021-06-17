@@ -1,7 +1,7 @@
 OrbiaML
 ==============================
 
-Tools for doing machine learning in Orbia
+Tools for doing machine learning with some of my custom transformers.
 
 ## How to contribute
 Install all project dependencies (prod and dev)

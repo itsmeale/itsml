@@ -2,23 +2,23 @@ import os
 
 
 def check_import_order():
-    os.system("isort --check ./orbiaml/ --skip __init__.py --gitignore --dont-follow-links --verbose")
+    os.system("isort --check ./itsml/ --skip __init__.py --gitignore --dont-follow-links --verbose")
 
 
 def check_code_formatting():
-    os.system("black --check ./orbiaml/ --exclude __init__.py --verbose")
+    os.system("black --check ./itsml/ --exclude __init__.py --verbose")
 
 
 def sort_import_order():
-    os.system("isort ./orbiaml/ ./tests/ --skip __init__.py --gitignore --dont-follow-links --verbose")
+    os.system("isort ./itsml/ ./tests/ --skip __init__.py --gitignore --dont-follow-links --verbose")
 
 
 def do_code_formatting():
-    os.system("black ./orbiaml/ ./tests/ --exclude __init__.py --exclude .ipynb_checkpoints/ --verbose")
+    os.system("black ./itsml/ ./tests/ --exclude __init__.py --exclude .ipynb_checkpoints/ --verbose")
 
 
 def linter():
-    os.system("pylama ./orbiaml/ ./tests/")
+    os.system("pylama ./itsml/ ./tests/")
 
 
 def run_tests():

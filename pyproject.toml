@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "orbiaml"
-version = "0.1.0"
-description = "Tools for doing machine learning in Orbia"
+name = "itsml"
+version = "0.0.1"
+description = "Tools for doing machine learning with some of my custom transformers."
 authors = ["Alexandre Farias <0800alefarias@gmail.com>"]
 
 [tool.poetry.dependencies]

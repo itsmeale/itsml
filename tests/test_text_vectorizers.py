@@ -1,13 +1,13 @@
 import pandas as pd
 
-from orbiaml.feature_extraction.text import CountDocByTargetsVectorizer
+from itsml.feature_extraction.text import CountDocByTargetsVectorizer
 
 df = pd.DataFrame(
-    {"documents": ["a orbia revolution point", "a negative example"], "targets": [1, 0]}
+    {"documents": ["a itsml revolution point", "a negative example"], "targets": [1, 0]}
 )
 
 expectations = {
-    "a orbia revolution point": [4, 1],
+    "a itsml revolution point": [4, 1],
     "a negative example": [1, 3],
     "lala lla aal": [0, 0],
 }
