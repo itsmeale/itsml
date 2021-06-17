@@ -43,7 +43,6 @@ def remove_small_tokens(
     df: pd.DataFrame, column: str, min_token_size: int
 ) -> pd.DataFrame:
     regex = r"\b" + r"\w{0," + str(min_token_size) + r"}\b"
-    print(regex)
     df[column] = df[column].str.replace(regex, " ", regex=True)
     return df
 
