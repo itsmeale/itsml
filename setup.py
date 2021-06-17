@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name="itsml",
-    version="0.1.0",
+    version="0.1.1",
     description="Tools for doing machine learning with some of my custom transformers.",
     author="Alexandre Farias <0800alefarias@gmail.com>",
     license="MIT",
