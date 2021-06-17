@@ -1,5 +1,3 @@
-import pandas as pd
-
 from orbiaml.preprocessing.text import TextNormalizationTransformer
 
 corpora = ["Órbia, the point!! Of revolution!! 1221 .,/;!@@!"]
