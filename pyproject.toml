@@ -5,7 +5,7 @@ description = "Tools for doing machine learning with some of my custom transform
 authors = ["Alexandre Farias <0800alefarias@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 numpy = "^1.20.3"
 pandas = "^1.2.4"
 scikit-learn = "^0.24.2"
