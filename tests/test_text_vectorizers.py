@@ -9,7 +9,7 @@ df = pd.DataFrame(
 expectations = {
     "a orbia revolution point": [4, 1],
     "a negative example": [1, 3],
-    "lala lla aal": [1, 1],
+    "lala lla aal": [0, 0],
 }
 
 
