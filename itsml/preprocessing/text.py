@@ -5,7 +5,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 
 def remove_stop_words(df: pd.DataFrame, column: str, stopwords: Set) -> pd.DataFrame:
-    token_column: str = "__orbiaml_tokens"
+    token_column: str = "__itsml_tokens"
     df[token_column] = df[column].str.split()
     df[column] = df[token_column].apply(
         lambda tokens: " ".join([token for token in tokens if token not in stopwords])
@@ -71,7 +71,7 @@ def default_text_preprocessing_pipeline(
 class TextNormalizationTransformer(BaseEstimator, TransformerMixin):
     def __init__(self, stopwords: Set[str], min_token_size: int = 0):
         self.stopwords = stopwords
-        self.column = "__orbiaml_temp"
+        self.column = "__itsml_temp"
         self.min_token_size = min_token_size
 
     def fit(self, X, y=None):
