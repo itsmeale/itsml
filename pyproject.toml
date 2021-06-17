@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "itsml"
-version = "0.0.3"
+version = "0.0.4"
 description = "Tools for doing machine learning with some of my custom transformers."
 authors = ["Alexandre Farias <0800alefarias@gmail.com>"]
 
@@ -10,12 +10,12 @@ numpy = "^1.20.3"
 pandas = "^1.2.4"
 scikit-learn = "^0.24.2"
 setuptools = "^57.0.0"
-pytest = "^6.2.4"
-isort = "^5.8.0"
 
 [tool.poetry.dev-dependencies]
 pylama = "^7.7.1"
 black = "^21.6b0"
+pytest = "^6.2.4"
+isort = "^5.8.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
