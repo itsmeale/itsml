@@ -21,6 +21,7 @@ jobs:
           pip install poetry==1.1.5
       - name: install project dependencies
         run: |
+          poetry config virtualenvs.create false
           poetry install
       - name: Check code formatting
         run: |
