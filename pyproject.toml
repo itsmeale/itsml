@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "orbiaml"
+version = "0.1.0"
+description = "Tools for doing machine learning in Orbia"
+authors = ["Alexandre Farias <0800alefarias@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.20.3"
+pandas = "^1.2.4"
+scikit-learn = "^0.24.2"
+setuptools = "^57.0.0"
+pytest = "^6.2.4"
+isort = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+pylama = "^7.7.1"
+black = "^21.6b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fmt = "scripts.code_quality:do_code_formatting"
+isort-fmt = "scripts.code_quality:sort_import_order"
+fmt-check = "scripts.code_quality:check_code_formatting"
+isort-check = "scripts.code_quality:check_import_order"
+linter = "scripts.code_quality:linter"
+tests = "scripts.code_quality:run_tests"
