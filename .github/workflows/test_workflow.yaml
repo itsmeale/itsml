@@ -21,16 +21,17 @@ jobs:
           pip install poetry==1.1.5
       - name: install project dependencies
         run: |
+          poetry config virtualenvs.create false
           poetry install
       - name: Check code formatting
         run: |
-          poetry run fmt-check
+          black --check ./orbiaml/ --exclude __init__.py --verbose
       - name: Check import orders
         run: |
-          poetry run isort-check
+          isort --check ./orbiaml/ --skip __init__.py --gitignore --dont-follow-links --verbose
       - name: Linter
         run: |
-          poetry run linter
+          pylama ./orbiaml/ ./tests/
       - name: Run tests
         run: |
-          poetry run tests
+          pytest ./tests/ --verbose --color=yes --code-highlight=yes
