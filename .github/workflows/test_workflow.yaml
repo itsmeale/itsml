@@ -25,13 +25,13 @@ jobs:
           poetry install
       - name: Check code formatting
         run: |
-          black --check ./orbiaml/ --exclude __init__.py --verbose
+          black --check ./itsml/ --exclude __init__.py --verbose
       - name: Check import orders
         run: |
-          isort --check ./orbiaml/ --skip __init__.py --gitignore --dont-follow-links --verbose
+          isort --check ./itsml/ --skip __init__.py --gitignore --dont-follow-links --verbose
       - name: Linter
         run: |
-          pylama ./orbiaml/ ./tests/
+          pylama ./itsml/ ./tests/
       - name: Run tests
         run: |
           pytest ./tests/ --verbose --color=yes --code-highlight=yes
