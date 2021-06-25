@@ -77,7 +77,7 @@ class TextNormalizationTransformer(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X, y=None):
-        df = pd.DataFrame({self.column: X})
+        df = pd.DataFrame({self.column: X}, dtype=str)
         default_text_preprocessing_pipeline(
             df, self.stopwords, self.column, self.min_token_size
         )
