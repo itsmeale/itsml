@@ -1,4 +1,4 @@
-OrbiaML
+ItsML
 ==============================
 
 Tools for doing machine learning with some of my custom transformers.
